@@ -1,0 +1,156 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+/*Logo*/
+
+.cabecalho{
+    background-color: #ffaf1b;
+    background-image: linear-gradient(0deg, #ffaf1b 0%, #ffffff 100%);
+    box-shadow: 0px 3px 10px rgba(109, 109, 109, 0.849) ;
+    width: 100%;
+    height: 180px;
+}
+
+.logo{
+    justify-content: center;
+    display: flex;
+}
+
+.logo a{
+    padding-top: 30px;
+}
+
+.logo span{
+    font-size: 70px;
+    letter-spacing: 1rem;
+    font-family: 'Lora', serif;
+    color: #ff3d1b;
+}
+
+.logo img{
+    height: 100px;
+}
+/*Logo*/
+
+/*Menu das pizzas*/
+
+.menu_pizzas{
+    display: block;
+    width: 1100px;
+    height: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    color: #ff1b6b;
+    letter-spacing: 0.3rem;
+}
+
+.menu_pizzas ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu_pizzas li{
+    display: flex;
+    width: 270px;
+    height: 290px;
+    margin: 30px 20px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.719);
+    background-color: #ffaf1b;
+    background-image: linear-gradient(0deg, #ffaf1b 0%, #ffffff 100%);
+    position: relative;
+    transform: scale(1);
+    transition: all ease-in-out .2s;
+}
+
+.menu_pizzas li:hover{
+    transform: scale(1.2);
+}
+
+.menu_pizzas .item{
+    display: block;
+    margin: auto;
+    justify-content: center;
+    cursor: auto;
+}
+
+.menu_pizzas span{
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    margin-top: 150px;
+    justify-content: center;
+    cursor: default;
+}
+
+.menu_pizzas img{
+    position: absolute;
+    top: -20px;
+    left: 45px;
+    width: 170px;
+    height: 170px;
+}
+
+.menu_pizzas .btn{
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    margin: 30px;
+    background-color: #ff3d1b;
+    background-image: linear-gradient(0deg, #ffffffad 0%,#ff3d1b 50%, #FF1b6b 100%);
+    color: #fdfffd;
+    cursor: pointer;
+}
+
+aside{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    z-index: 999;
+}
+
+.menu_retratil{
+    background-color: #ff1b6b;
+    width: 0px;
+    height: 120vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition:all ease .5s;
+}
+
+.menu_aberto{
+    width: 280px !important; 
+}
+
+.btn_menu .img{
+    margin: 15px 0px 0 20px;
+    height: 70px;
+    cursor: pointer;
+    transition: all ease-in-out .5;
+}
+
+.esconder{
+    display: none;
+}
