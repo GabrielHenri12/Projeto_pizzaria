@@ -123,6 +123,7 @@ ul{
     cursor: pointer;
 }
 
+/*Menu retratil*/
 aside{
     position: absolute;
     right: 0px;
@@ -153,4 +154,27 @@ aside{
 
 .esconder{
     display: none;
+}
+
+.menu_retratil{
+    margin: auto;
+}
+
+#conta{
+    display: flex;
+    margin-left: 20px;
+}
+
+#conta li a{
+    display: block;
+    font-size: 20pt;
+    color: #fff;
+    margin: 20px;
+}
+
+#carrinho li{
+    display: block;
+    font-size: 20pt;
+    color: #fff;
+    margin: 20px;
 }
