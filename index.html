@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
     <title>pizzaria</title>
 </head>
 
@@ -27,61 +28,64 @@
         <div class="menu_retratil">
             <ul id="conta">
                 <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="">Login</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
             </ul>
-            <ul id="carrinho"></ul>
         </div>
     </aside>
+    <div class="modeloGeral">
+        <div class="modelo">
+            <li>
+                <div class="item">
+                    <img src="" alt="">
+                    <span></span>
+                    <button class="btn">+ADICIONAR</button>
+                </div>
+            </li>
+        </div>
+    </div>
     <main class="opcoes_Pizza">
         <section class="menu_pizzas">
             <h2 class="titulo">Sabores</h2>
-            <ul>
-                <li>
-                    <div class="item">
-                        <img src="src/imagens/pizza.png" alt="">
-                        <span>Frango</span>
-                        <button class="btn" onclick="adicionar('Frango')">+ADICIONAR</button>
+            <div class="areaPizza"><ul class="ul"></ul></div>
+            <div class="pizzaInfo">
+                <div class="container">
+                    <img src="src/imagens/fecharMenu.svg" alt="fechar o menu" onclick="fechar()" id="fechar">
+                    <div class="pizza">
+                        <img src="" alt="">
+                        <Span></Span>
                     </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <img src="src/imagens/pizza.png" alt="">
-                        <span>Portuguesa</span>
-                        <button class="btn" onclick="adicionar('Portuguesa')">+ADICIONAR</button>
+                    <div class="subContainer">
+                        <div class="descricao">
+                            <p></p>
+                        </div>
+                        <div class="pizzaInfo--sizearea">
+                            <div class="pizzaInfo--sector">Tamanho</div>
+                            <div class="pizzaInfo--sizes">
+                                <div data-key="0" class="pizzaInfo--size tamanho1" onclick="tamanhoSelected('P')">PEQUENA <span>--</span></div>
+                                <div data-key="1" class="pizzaInfo--size tamanho2" onclick="tamanhoSelected('M')">MÉDIO <span>--</span></div>
+                                <div data-key="2" class="pizzaInfo--size tamanho3 selected" onclick="tamanhoSelected('G')">GRANDE <span>--</span></div>
+                            </div>
+                        </div>
+                        <div class="pizzaInfo--pricearea">
+                            <div class="pizzaInfo--sector">Preço</div>
+                            <div class="pizzaInfo--price">
+                                <div class="pizzaInfo--actualPrice">R$ --</div>
+                                <div class="pizzaInfo--qtarea">
+                                    <button class="pizzaInfo--qtmenos" onclick="maisMenos('menos')">-</button>
+                                    <div class="pizzaInfo--qt">1</div>
+                                    <button class="pizzaInfo--qtmais" onclick="maisMenos('mais')">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btnFinalizar" >ADICIONAR</button>
                     </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <img src="src/imagens/pizza.png" alt="">
-                        <span>Calabresa</span>
-                        <button class="btn" onclick="adicionar('Calabresa')">+ADICIONAR</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <img src="src/imagens/pizza.png" alt="">
-                        <span>Carne Seca</span>
-                        <button class="btn" onclick="adicionar('Carne Seca')">+ADICIONAR</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <img src="src/imagens/pizza.png" alt="">
-                        <span>Peperone</span>
-                        <button class="btn" onclick="adicionar('Peperone')">+ADICIONAR</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <img src="src/imagens/pizza.png" alt="">
-                        <span>Vegetariana</span>
-                        <button class="btn" onclick="adicionar('Vegetariana')">+ADICIONAR</button>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
     </main>
 
+    <script src="src/script/pizzas.js"></script>
     <script src="src/script/script.js"></script>
 </body>
 

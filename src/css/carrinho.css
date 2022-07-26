@@ -22,3 +22,8 @@ ul{
     height: 800px;
     margin: 40px auto;
 }
+
+button{
+    width: 100px;
+    height: 50px;
+}

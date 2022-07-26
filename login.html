@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
-    <title>cadastro</title>
+    <title>Login</title>
 </head>
 <body>
     <header class="cabecalho">
@@ -19,40 +19,23 @@
             </a>
         </div>
     </header>
-    <form action="login.html">
+    <form action="index.html" id="formulario">
         <div class="input">
-            <h2>cadastro</h2>
-            <div class="singleInput">
-                <input required type="text" name="nome" id="nome">
-                <label for="nome" id="labelNome">Nome:</label>
-            </div>
+            <h2>Login</h2>
 
             <div class="singleInput">
-                <input required type="text" name="nome de usuario"  id="nomeUsuario">
+                <input required type="text" name="nome de usuario"  id="loginUsuario">
                 <label for="nomeUsuario" id="labelnomeUsuario">Nome de Usuário:</label>
             </div>
-
             <div class="singleInput">
-                <input required type="email" name="Email"  id="email">
-                <label for="email" id="LabelEmail">Email:</label>
-            </div>
-
-            <div class="singleInput">
-                <input required type="password" name="senha"  id="senha">
+                <input required type="password" name="senha"  id="loginsenha">
                 <label for="senha" id="labelSenha">Senha:</label>
                 <img src="src/imagens/olho.png" id="verSenha" alt="Visualizar Senha">
             </div>
-
-            <div class="singleInput">
-                <input required type="password" name="confirmSenha" id="confirmSenha">
-                <label for="confirmSenha" id="labelConfirmSenha">Confirmar Senha:</label>
-                <img src="src/imagens/olho.png" id="verConfSenha" alt="Visualizar Senha">
-            </div>
-
-            <button onclick="cadastrar()" id="enviar">Cadastrar</button>
+            <button onclick="logar()" id="enviar">Logar</button>
         </div>
     </form>
-
-    <script src="src/script/Cadastro.js"></script>
+    
+    <script src="src/script/login.js"></script>
 </body>
 </html>
